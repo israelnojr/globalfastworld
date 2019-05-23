@@ -23,6 +23,7 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Slug</th>
+                                <th>Image</th>
                                 <th>Created At</th>
                                 <th>Updated At</th>
                                 <th>Action</th>
@@ -33,6 +34,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $category->name }}</td>
                                             <td>{{ $category->slug }}</td>
+                                            <td><img class="img-responsive img-thumbnail" src="{{ asset('uploads/category/'.$category->image) }}" style="height: 100px; width: 100px" alt=""></td>
                                             <td>{{ $category->created_at->toFormattedDateString()}}</td>
                                             <td>{{ $category->updated_at->toFormattedDateString()}}</td>
                                             <td>

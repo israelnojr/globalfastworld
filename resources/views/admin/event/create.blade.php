@@ -38,7 +38,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <label class="control-label">Image</label>
-                                        <input type="file" name="image">
+                                        <input type="file" class="form-control" name="image">
                                     </div>
                                 </div>
                                 <a href="{{ route('event.index') }}" class="btn btn-danger">Back</a>

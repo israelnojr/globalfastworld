@@ -48,11 +48,18 @@
                                         </div>
                                     </div>
                                 </div>
-            
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">Spec. url</label>
+                                            <input class="form-control" name="document" value="{{ $product->document }}">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <label class="control-label">Image</label>
-                                        <input type="file" name="image">
+                                        <input type="file" class="form-control" name="image">
                                     </div>
                                 </div>
                                 <a href="{{ route('category.index') }}" class="btn btn-danger">Back</a>

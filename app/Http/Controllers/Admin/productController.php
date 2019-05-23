@@ -44,6 +44,7 @@ class productController extends Controller
             'category' => 'required',
             'name' => 'required',
             'description' => 'required',
+            'document' => 'required',
             'image' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('image');
@@ -65,6 +66,7 @@ class productController extends Controller
         $product->category_id = $request->category;
         $product->name = $request->name;
         $product->description = $request->description;
+        $product->document = $request->document;
         $product->image = $imagename;
         $product->save();
         return redirect()->route('product.index')->with('success','Product Successfully Saved');
@@ -107,6 +109,7 @@ class productController extends Controller
             'category' => 'required',
             'name' => 'required',
             'description' => 'required',
+            'document'  => 'required',
             'image' => 'mimes:jpeg,jpg,bmp,png',
         ]);
         $product = Product::find($id);
@@ -130,6 +133,7 @@ class productController extends Controller
         $product->category_id = $request->category;
         $product->name = $request->name;
         $product->description = $request->description;
+        $product->document = $request->document;
         $product->image = $imagename;
         $product->save();
         return redirect()->route('product.index')->with('success','Product Successfully Updated');

@@ -21,6 +21,8 @@ use App\Http\Controllers\partnerController;
 Route::get('/','HomeController@index')->name('welcome');
 Route::post('/quotation','quotationController@send')->name('quotation.send');
 Route::post('/contact','contactController@send')->name('contact.send');
+Route::get('products/category', 'categoryController@index')->name('category.products');
+Route::resource('product', 'productController');
 
 Auth::routes();
 

@@ -6,9 +6,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateProdutctsTable extends Migration
 {
-    /**
+    /*
      * Run the migrations.
-     *
      * @return void
      */
     public function up()
@@ -19,6 +18,7 @@ class CreateProdutctsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('image');
+            $table->string('document');
             $table->foreign('category_id')
                 ->references('id')->on('categories')
                 ->onDelete('cascade');

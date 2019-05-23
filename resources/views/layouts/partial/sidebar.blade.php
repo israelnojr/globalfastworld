@@ -46,7 +46,6 @@
                 </a>
             </li>
 
-
             <li class="{{Request::is('admin/project*')?'active': ''}}">
                 <a href="{{route('project.index')}}">
                     <i class="material-icons">work_outline</i>
