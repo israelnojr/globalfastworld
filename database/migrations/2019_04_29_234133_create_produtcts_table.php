@@ -17,6 +17,7 @@ class CreateProdutctsTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->string('name');
             $table->text('description');
+            $table->string('slug');
             $table->string('image');
             $table->string('document');
             $table->foreign('category_id')

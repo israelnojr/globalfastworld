@@ -66,6 +66,7 @@ class productController extends Controller
         $product->category_id = $request->category;
         $product->name = $request->name;
         $product->description = $request->description;
+        $product->slug = str_slug($request->name);
         $product->document = $request->document;
         $product->image = $imagename;
         $product->save();
@@ -133,6 +134,7 @@ class productController extends Controller
         $product->category_id = $request->category;
         $product->name = $request->name;
         $product->description = $request->description;
+        $product->slug = str_slug($request->name);
         $product->document = $request->document;
         $product->image = $imagename;
         $product->save();

@@ -17,7 +17,7 @@ class categoryController extends Controller
 
     public function index()
     {
-        $categories = Category::paginate(2);
+        $categories = Category::all();
         return view('admin.category.index',compact('categories'));
     }
 
@@ -39,7 +39,6 @@ class categoryController extends Controller
      */
     public function store(Request $request)
     {
-       
         $this->validate($request,[
             'name' => 'required',
             'image' => 'mimes:jpeg,jpg,bmp,png',

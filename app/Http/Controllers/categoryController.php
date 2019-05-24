@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Category;
+use App\Product;
 use App\Slider;
 use App\About;
 use Illuminate\Http\Request;
@@ -16,9 +18,16 @@ class categoryController extends Controller
     {
         $sliders = Slider::all();
         $abouts = About::all();
-        return view('category',compact('sliders','abouts'));
+        $categories = Category::all();
+        $products = Product::all();
+        return view('category',compact('sliders','abouts','categories','products'));
     }
 
+    public function singleproduct($slug)
+    {
+        $product = Product::where('slug',$slug)->first();
+        return view('product', compact('product'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -46,9 +55,13 @@ class categoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        $sliders = Slider::all();
+        $abouts = About::all();
+        $category = Category::where('slug',$slug)->first();
+        $products = $category->products;
+        return view('products',compact('sliders','abouts','category','products'));
     }
 
     /**

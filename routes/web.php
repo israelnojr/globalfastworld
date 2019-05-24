@@ -22,7 +22,8 @@ Route::get('/','HomeController@index')->name('welcome');
 Route::post('/quotation','quotationController@send')->name('quotation.send');
 Route::post('/contact','contactController@send')->name('contact.send');
 Route::get('products/category', 'categoryController@index')->name('category.products');
-Route::resource('product', 'productController');
+Route::get('category/{slug}', 'categoryController@show')->name('category.product');
+Route::get('product/{slug}', 'categoryController@singleproduct')->name('product');
 
 Auth::routes();
 
