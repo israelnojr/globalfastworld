@@ -164,7 +164,6 @@ body
 .button:link, .button:visited{
         text-transform: uppercase;
         text-decoration:none;
-        padding:1.5rem 4rem ;
         display: inline-block;
         border-radius:10rem;
         transition: all .2s ease;
@@ -178,6 +177,13 @@ body
             opacity: 0;
         }
 
+.specBtn{
+	padding: 7px;
+	width: 21%;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	color: #fff;
+}
 .section-title
 {
 	/*padding: 310px 0px;

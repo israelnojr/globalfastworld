@@ -16,7 +16,7 @@
                         </div>
                         <div class="card-content">
                             <p class="category">Cat / Prod</p>
-                            <h3 class="title">{{ $categoryCount }}/{{ $projectCount }}
+                            <h3 class="title">{{ $categoryCount }}/{{ $productCount }}
                             </h3>
                         </div>
                         <div class="card-footer">

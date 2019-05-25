@@ -78,7 +78,7 @@
                                     <h2 class="pricing-title">Our Products</h2>
                                     <ul id="filter-list" class="clearfix">
                                         <li class="filter" data-filter="all">All</li>
-                                        @foreach($categories as $category)
+                                        @foreach($frontCat as $category)
                                             <li class="filter" data-filter="#{{$category->slug}}">{{ $category->name }} <span class="badge">{{ $category->products->count() }}</span></li>
                                         @endforeach
                                     </ul><!-- @end #filter-list -->

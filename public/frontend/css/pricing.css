@@ -19,6 +19,9 @@
 	margin-bottom: 70px;
 }
 
+.marginBottom{
+	margin-bottom: 130px;
+}
 .pricing-filter-wrapper {
 	background-color: rgba(62, 67, 179, 0.53);
 	height: 40vh;
@@ -37,7 +40,6 @@
 	text-transform: uppercase;
 	bottom: -75px;
 }
-
 
 /** filters list **/
 #filter-list {

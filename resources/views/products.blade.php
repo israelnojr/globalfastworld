@@ -30,7 +30,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-md-offset-1">
                         <ul id="menu-pricing" class="menu-price">
                             @foreach($products as $product)
                                 <li class="item" id="{{ $product->category->slug }}">

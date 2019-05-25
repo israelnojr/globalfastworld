@@ -19,6 +19,8 @@
                                 <ul class="social-list">
                                     <li><a href="###" class="social-icon icon-white"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="###" class="social-icon icon-white"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="###" class="social-icon icon-white"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="###" class="social-icon icon-white"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                         </div>
                     </div>
